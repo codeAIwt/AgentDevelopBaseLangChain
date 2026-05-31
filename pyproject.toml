@@ -6,20 +6,31 @@ authors = [{name = "Developer", email = "dev@example.com"}]
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    # Web框架
     "python-dotenv>=1.0.0",
     "fastapi>=0.110.0",
     "uvicorn[standard]>=0.29.0",
+
+    # 数据库
     "psycopg[binary]>=3.1.0",
     "pgvector>=0.3.0",
     "sqlalchemy>=2.0.0",
+
+    # 数据验证
     "pydantic>=2.0.0",
     "pydantic-settings>=2.0.0",
+
+    # LangChain
     "langchain>=0.1.0",
-    "langchain-openai>=0.0.5",
-    "langchain-community>=0.0.20",
     "langchain-core>=0.1.0",
     "langchain-text-splitters>=0.0.1",
-    "chromadb>=0.4.22",
+    "langgraph>=0.2.0",
+
+    # 本地模型（Blender 建模用）
+    "ctransformers>=0.2.27",
+    "huggingface-hub>=0.26.0",
+
+    # 测试
     "pytest>=8.0.0",
     "pytest-asyncio>=0.23.0",
 ]

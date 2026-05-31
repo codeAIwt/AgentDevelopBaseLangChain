@@ -38,3 +38,29 @@ logs/
 .vectorstore/
 .chroma/
 .duckdb/
+
+# AI Models - 本地模型文件（非常大，不提交到 Git）
+models/
+*.gguf
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# Model Cache
+.models/
+model_cache/
+huggingface/
+
+# Download Scripts - 下载脚本（不需要提交）
+download_model.py
+list_model_files.py
+get_model.py
+
+# Jupyter Notebook outputs
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Temporary files
+temp_*.py
+*.tmp
