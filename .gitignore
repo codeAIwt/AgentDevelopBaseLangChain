@@ -22,7 +22,10 @@ conda-env/
 Thumbs.db
 
 # Environment
-!.env.example
+.env.example
+.env
+
+
 
 # Database
 *.db
